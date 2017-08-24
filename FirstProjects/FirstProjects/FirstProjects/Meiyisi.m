@@ -12,6 +12,7 @@
 
 + (void)meimei{
     NSLog(@"meimei");
+    NSLog(@"再一次更新");
 }
 
 @end
