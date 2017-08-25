@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Color+Hex.h"
+#import "PublicHead.h"
 @interface ZHBaseViewController : UITabBarController
 + (instancetype)shareManager;
 @property (nonatomic, strong) UIView *tabbarView;

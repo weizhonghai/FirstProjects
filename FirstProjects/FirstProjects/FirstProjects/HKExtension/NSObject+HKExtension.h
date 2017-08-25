@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PublicHead.h"
 @interface NSObject (HKExtension)<NSCoding>
 
 @end

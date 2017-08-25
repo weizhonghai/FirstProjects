@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PublicHead.h"
 @interface WZHNavigationViewController : UINavigationController
 @property (nonatomic, strong) UIColor *barTintColor;
 @property (nonatomic, strong) NSDictionary *titleTextAttributes;

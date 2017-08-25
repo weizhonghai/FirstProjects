@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PublicHead.h"
 @class YBUnlimitedSlideViewController;
 
 @protocol  YBUnlimitedSlideViewControllerDelegate<NSObject>

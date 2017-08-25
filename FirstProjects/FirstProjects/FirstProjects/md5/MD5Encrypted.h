@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "PublicHead.h"
 @interface MD5Encrypted : NSObject
 
 +(NSString *) md5: (NSString *)inputString;

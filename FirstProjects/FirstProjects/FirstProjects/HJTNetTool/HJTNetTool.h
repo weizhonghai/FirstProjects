@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "APIdefine.h"
+#import "PublicHead.h"
 NS_ASSUME_NONNULL_BEGIN
 @interface HJTNetTool : NSObject
 typedef void(^successBlock)(id _Nullable responseObject);
