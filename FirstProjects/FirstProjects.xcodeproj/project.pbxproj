@@ -25,6 +25,7 @@
 		22C8C1E41F4FCA410063333C /* WZHNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C8C1D61F4FCA410063333C /* WZHNavigationViewController.m */; };
 		22C8C1E51F4FCA410063333C /* YBUnlimitedSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C8C1D91F4FCA410063333C /* YBUnlimitedSlideViewController.m */; };
 		22C8C1E61F4FCA410063333C /* ZHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C8C1DC1F4FCA410063333C /* ZHBaseViewController.m */; };
+		F74CB0A26FA6234E9694BDCB /* libPods-FirstProjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6713C0A7B94A4E7109D3B9E /* libPods-FirstProjects.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,10 @@
 		22C8C1F61F4FCCDC0063333C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		22C8C1F81F4FCCE80063333C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22C8C1FA1F4FCCF10063333C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22C8C2121F5008E90063333C /* PublicHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHead.h; sourceTree = "<group>"; };
+		89D015B9A7F084C8D4E29BB2 /* Pods-FirstProjects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstProjects.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstProjects/Pods-FirstProjects.release.xcconfig"; sourceTree = "<group>"; };
+		A6713C0A7B94A4E7109D3B9E /* libPods-FirstProjects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstProjects.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA30A9BBF8B01287934E496E /* Pods-FirstProjects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstProjects.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstProjects/Pods-FirstProjects.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74CB0A26FA6234E9694BDCB /* libPods-FirstProjects.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +133,7 @@
 				228E82641F4E7EBE00108312 /* FirstProjectsUITests */,
 				228E823E1F4E7EBD00108312 /* Products */,
 				22C8C1E71F4FCC3D0063333C /* Frameworks */,
+				F1D82A1F07F98557BBDA79F5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +201,7 @@
 				22C8C1D41F4FCA410063333C /* NavgationController */,
 				22C8C1D71F4FCA410063333C /* YBUnlimitedSlideViewController */,
 				22C8C1DA1F4FCA410063333C /* ZHBaseTabBar */,
+				22C8C2121F5008E90063333C /* PublicHead.h */,
 			);
 			path = FirstProjects;
 			sourceTree = "<group>";
@@ -288,8 +296,18 @@
 				22C8C1EC1F4FCC4F0063333C /* CoreTelephony.framework */,
 				22C8C1EA1F4FCC450063333C /* libz.tbd */,
 				22C8C1E81F4FCC3D0063333C /* libc++.tbd */,
+				A6713C0A7B94A4E7109D3B9E /* libPods-FirstProjects.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1D82A1F07F98557BBDA79F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA30A9BBF8B01287934E496E /* Pods-FirstProjects.debug.xcconfig */,
+				89D015B9A7F084C8D4E29BB2 /* Pods-FirstProjects.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228E826A1F4E7EBE00108312 /* Build configuration list for PBXNativeTarget "FirstProjects" */;
 			buildPhases = (
+				6351677944505EF74F933976 /* [CP] Check Pods Manifest.lock */,
 				228E82391F4E7EBD00108312 /* Sources */,
 				228E823A1F4E7EBD00108312 /* Frameworks */,
 				228E823B1F4E7EBD00108312 /* Resources */,
+				73EFAFE775340C6FE6A9CC8A /* [CP] Embed Pods Frameworks */,
+				8E81CBF5A1FDE9DCCB03F32B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,6 +443,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6351677944505EF74F933976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirstProjects-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73EFAFE775340C6FE6A9CC8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstProjects/Pods-FirstProjects-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E81CBF5A1FDE9DCCB03F32B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstProjects/Pods-FirstProjects-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		228E82391F4E7EBD00108312 /* Sources */ = {
@@ -589,6 +661,7 @@
 		};
 		228E826B1F4E7EBE00108312 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA30A9BBF8B01287934E496E /* Pods-FirstProjects.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CWY55A99VM;
@@ -605,6 +678,7 @@
 		};
 		228E826C1F4E7EBE00108312 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D015B9A7F084C8D4E29BB2 /* Pods-FirstProjects.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CWY55A99VM;

@@ -21,9 +21,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'  
 
   s.requires_arc = true
-
-  s.source_files  = 'FirstProjects/FirstProjects/FirstProjects/**/*'
-
-  s.frameworks = 'Foundation'    
+  s.public_header_files = 'FirstProjects/FirstProjects/FirstProjects/*.h'
+  s.source_files  = 'FirstProjects/FirstProjects/FirstProjects/PublicHead.h'
+  s.frameworks = 'UIKit','Foundation' 
+  s.dependency 'YYKit', '~> 1.0.9' 
+  s.dependency 'MBProgressHUD', '~> 1.0.0'
+  s.dependency 'Masonry', '~> 1.0.2'
+  s.dependency 'AFNetworking', '~> 3.1.0'
 end
 

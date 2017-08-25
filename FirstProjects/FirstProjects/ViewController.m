@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Meiyisi.h"
+
 @interface ViewController ()
 
 @end
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Meiyisi meimei];
+    
 }
 
 
