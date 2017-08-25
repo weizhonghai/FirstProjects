@@ -1,0 +1,56 @@
+//
+//  WZHNavigationViewController.m
+//  SingleCategoryMall
+//
+//  Created by 海神 on 16/10/14.
+//  Copyright © 2016年 海神. All rights reserved.
+//
+
+#import "WZHNavigationViewController.h"
+#import "Color+Hex.h"
+@interface WZHNavigationViewController ()
+
+@end
+
+@implementation WZHNavigationViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+//    self.navigationController.navigationBar.translucent = YES;
+    [UINavigationBar appearance].translucent = NO;
+}
+
+- (void)setTitleTextAttributes:(NSDictionary *)titleTextAttributes{
+    [UINavigationBar appearance].titleTextAttributes = titleTextAttributes;
+}
+
+- (void)setBarTintColor:(UIColor *)barTintColor{
+    _barTintColor = barTintColor;
+    [UINavigationBar appearance].barTintColor = barTintColor;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self) {
+        if (self.childViewControllers.count != 0) {
+            viewController.hidesBottomBarWhenPushed = YES;
+            //设置导航左侧按钮图片
+            UIButton *leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+            [leftBtn setImage:[UIImage imageNamed:@"返回"] forState:UIControlStateNormal];
+            UIBarButtonItem *barbutton = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+            leftBtn.tintColor = [UIColor blueColor];
+            [leftBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+            viewController.navigationItem.leftBarButtonItem = barbutton;
+        }else{
+            viewController.hidesBottomBarWhenPushed = NO;
+        }
+    }
+    [super pushViewController:viewController animated:animated];
+}
+- (void)back{
+    [self popViewControllerAnimated:YES];
+}
+@end
