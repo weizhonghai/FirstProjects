@@ -16,8 +16,8 @@
 #import "WZHNavigationViewController.h"
 #import "YBUnlimitedSlideViewController.h"
 #import "ZHBaseViewController.h"
-#import <MBProgressHUD.h>
-#import <YYKit.h>
-#import <Masonry.h>
-#import <AFNetworking.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <YYKit/YYKit.h>
+#import <Masonry/Masonry.h>
+#import <AFNetworking/AFNetworking.h>
 #endif /* PublicHead_h */
