@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 #  s.public_header_files = 'FirstProjects/FirstProjects/FirstProjects/FirstProjectsPublicHead.h'
   s.source_files  = 'FirstProjects/FirstProjects/FirstProjects/**/*'
-  s.frameworks = 'UIKit','Foundation','Security' ,'CommonCrypto'
+  s.frameworks = 'UIKit','Foundation','Security'
   s.dependency 'YYKit', '~> 1.0.9' 
   s.dependency 'MBProgressHUD', '~> 1.0.0'
   s.dependency 'Masonry', '~> 1.0.2'
