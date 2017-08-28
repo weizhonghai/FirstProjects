@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FirstProjects"
-  s.version      = "0.2.5"   
+  s.version      = "0.2.6"   
   s.summary      = "Just Testing."
 
   s.description  = <<-DESC
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
 #  s.public_header_files = 'FirstProjects/FirstProjects/FirstProjects/FirstProjectsPublicHead.h'
   s.source_files  = 'FirstProjects/FirstProjects/FirstProjects/**/*'
   s.frameworks = 'UIKit','Foundation','Security'
+  s.ios.library = 'CommonCrypto'
   s.dependency 'YYKit', '~> 1.0.9' 
   s.dependency 'MBProgressHUD', '~> 1.0.0'
   s.dependency 'Masonry', '~> 1.0.2'
