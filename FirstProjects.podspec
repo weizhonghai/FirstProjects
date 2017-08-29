@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 #  s.public_header_files = 'FirstProjects/FirstProjects/FirstProjects/FirstProjectsPublicHead.h'
   s.source_files  = 'FirstProjects/FirstProjects/FirstProjects/**/*'
   s.frameworks = 'UIKit','Foundation','Security'
-  s.libraries = 'CommonCrypto'
+#  s.libraries = 'CommonCrypto'
 #  s.ios.library = 'CommonCrypto'
   s.dependency 'YYKit', '~> 1.0.9' 
   s.dependency 'MBProgressHUD', '~> 1.0.0'
