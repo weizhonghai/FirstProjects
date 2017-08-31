@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2286CD481F57F1EC0022F004 /* CALScanQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2286CD3D1F57F1EC0022F004 /* CALScanQRCode.bundle */; };
+		2286CD491F57F1EC0022F004 /* CALScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286CD401F57F1EC0022F004 /* CALScanQRCodeViewController.m */; };
+		2286CD4A1F57F1EC0022F004 /* CALScanQRCodeCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286CD441F57F1EC0022F004 /* CALScanQRCodeCameraView.m */; };
+		2286CD4B1F57F1EC0022F004 /* CALScanQRCodeTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286CD471F57F1EC0022F004 /* CALScanQRCodeTitleView.m */; };
 		228E82421F4E7EBD00108312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 228E82411F4E7EBD00108312 /* main.m */; };
 		228E82451F4E7EBD00108312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 228E82441F4E7EBD00108312 /* AppDelegate.m */; };
 		228E82481F4E7EBE00108312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228E82471F4E7EBE00108312 /* ViewController.m */; };
@@ -47,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2286CD3D1F57F1EC0022F004 /* CALScanQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CALScanQRCode.bundle; sourceTree = "<group>"; };
+		2286CD3F1F57F1EC0022F004 /* CALScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeViewController.h; sourceTree = "<group>"; };
+		2286CD401F57F1EC0022F004 /* CALScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeViewController.m; sourceTree = "<group>"; };
+		2286CD431F57F1EC0022F004 /* CALScanQRCodeCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeCameraView.h; sourceTree = "<group>"; };
+		2286CD441F57F1EC0022F004 /* CALScanQRCodeCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeCameraView.m; sourceTree = "<group>"; };
+		2286CD461F57F1EC0022F004 /* CALScanQRCodeTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeTitleView.h; sourceTree = "<group>"; };
+		2286CD471F57F1EC0022F004 /* CALScanQRCodeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeTitleView.m; sourceTree = "<group>"; };
 		228E823D1F4E7EBD00108312 /* FirstProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228E82411F4E7EBD00108312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		228E82431F4E7EBD00108312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +140,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2286CD3C1F57F1EC0022F004 /* CALScanQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				2286CD3D1F57F1EC0022F004 /* CALScanQRCode.bundle */,
+				2286CD3E1F57F1EC0022F004 /* Controller */,
+				2286CD411F57F1EC0022F004 /* Views */,
+			);
+			path = CALScanQRCode;
+			sourceTree = "<group>";
+		};
+		2286CD3E1F57F1EC0022F004 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2286CD3F1F57F1EC0022F004 /* CALScanQRCodeViewController.h */,
+				2286CD401F57F1EC0022F004 /* CALScanQRCodeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2286CD411F57F1EC0022F004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2286CD421F57F1EC0022F004 /* CALScanQRCodeCameraView */,
+				2286CD451F57F1EC0022F004 /* CALScanQRCodeTitleView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2286CD421F57F1EC0022F004 /* CALScanQRCodeCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				2286CD431F57F1EC0022F004 /* CALScanQRCodeCameraView.h */,
+				2286CD441F57F1EC0022F004 /* CALScanQRCodeCameraView.m */,
+			);
+			path = CALScanQRCodeCameraView;
+			sourceTree = "<group>";
+		};
+		2286CD451F57F1EC0022F004 /* CALScanQRCodeTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				2286CD461F57F1EC0022F004 /* CALScanQRCodeTitleView.h */,
+				2286CD471F57F1EC0022F004 /* CALScanQRCodeTitleView.m */,
+			);
+			path = CALScanQRCodeTitleView;
+			sourceTree = "<group>";
+		};
 		228E82341F4E7EBD00108312 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +255,7 @@
 		228E82731F4E9C0B00108312 /* FirstProjects */ = {
 			isa = PBXGroup;
 			children = (
+				2286CD3C1F57F1EC0022F004 /* CALScanQRCode */,
 				22A7C0E61F54075000A92E89 /* ZHkeyChain */,
 				22C8C1C01F4FCA410063333C /* Color+Hex */,
 				22C8C1C31F4FCA410063333C /* des */,
@@ -440,6 +498,7 @@
 				228E82501F4E7EBE00108312 /* LaunchScreen.storyboard in Resources */,
 				228E824D1F4E7EBE00108312 /* Assets.xcassets in Resources */,
 				228E824B1F4E7EBE00108312 /* Main.storyboard in Resources */,
+				2286CD481F57F1EC0022F004 /* CALScanQRCode.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,11 +583,14 @@
 				22C8C1E11F4FCA410063333C /* HJTNetTool.m in Sources */,
 				22C8C1E31F4FCA410063333C /* MD5Encrypted.m in Sources */,
 				22C8C1E41F4FCA410063333C /* WZHNavigationViewController.m in Sources */,
+				2286CD491F57F1EC0022F004 /* CALScanQRCodeViewController.m in Sources */,
 				22C8C1DF1F4FCA410063333C /* DesUtil.m in Sources */,
+				2286CD4A1F57F1EC0022F004 /* CALScanQRCodeCameraView.m in Sources */,
 				22C8C1E61F4FCA410063333C /* ZHBaseViewController.m in Sources */,
 				22A7C0E91F54076A00A92E89 /* ZHKeyChain.m in Sources */,
 				228E82451F4E7EBD00108312 /* AppDelegate.m in Sources */,
 				228E82421F4E7EBD00108312 /* main.m in Sources */,
+				2286CD4B1F57F1EC0022F004 /* CALScanQRCodeTitleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
